@@ -8,16 +8,16 @@
 	-	关闭分屏：C-d
 	-	新建窗口：C-x c
 	-	在窗口间切换：C-x p、C-x n  
-		或直接切到某一窗口：C-x <number>
+		或直接切到某一窗口：C-x \<number\>
 2. 会话相关    
 	-	脱离当前客户会话（后台运行）：C-x d  
 		（如果有多个客户，可用C-x D选择要脱离的客户）
 	-	查看所有会话：  
 		tmux ls  
 	-	连接某个会话：
-		tmux attach -t <number>
+		tmux attach -t \<number\>
 	-	创建新的会话并命名：  
-		tmux new -s <name>
+		tmux new -s \<name\>
 3.	更多
 	-	C-x z:make a pane go full screen. Hit C-b z again to shrink it back to its previous size
 	-	C-x C-\<arrow key\>: Resize pane in direction of \<arrow key\>
