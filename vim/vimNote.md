@@ -37,7 +37,10 @@
   - **fx** jumps to the next **x** on the line  
   - **tx** jumps to the character just before the next **x** on the line
   - You can use **Fx** and **Tx** to reach the previous **x**  
-  - You can use **2fx** to jump to the second **x** on the line
+  - You can use **2fx** to jump to the second **
+  - **;**	Repeat latest f, t, F or T \[count\] times.
+  - **,** opposite position from **;**
+x** on the line
   - **useful tips**  
     - **cT=** will change every thing before the equation sign on the line 
     - **ct)** is change all parameters between the **)** and the cursor   
