@@ -33,6 +33,12 @@
       display all buffers in tabs
     * :tab sbN   
       在新table中打开序号为N的buffer
-
-
-    
+* t 与 f (**t**ill and **f**ind) 
+  - **fx** jumps to the next **x** on the line  
+  - **tx** jumps to the character just before the next **x** on the line
+  - You can use **Fx** and **Tx** to reach the previous **x**  
+  - You can use **2fx** to jump to the second **x** on the line
+  - **useful tips**  
+    - **cT=** will change every thing before the equation sign on the line 
+    - **ct)** is change all parameters between the **)** and the cursor   
+    btw, **ci(** is more usefull when all parameters are needed to be changed
