@@ -40,5 +40,5 @@
   - You can use **2fx** to jump to the second **x** on the line
   - **useful tips**  
     - **cT=** will change every thing before the equation sign on the line 
-    - **ct)** is change all parameters between the **)** and the cursor   
+    - **ct)** will change all parameters between the **)** and the cursor   
     btw, **ci(** is more usefull when all parameters are needed to be changed
