@@ -1,4 +1,4 @@
-* buffer操作
+* buffer操作 [reference link](https://dev.to/iggredible/using-buffers-windows-and-tabs-efficiently-in-vim-56jc)
     * :ls 列出所有buffer
     * :bd N 删除序号为N的buffer
     * :bd filename 删除名字为filename的buffer
