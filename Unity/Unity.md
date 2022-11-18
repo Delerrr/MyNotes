@@ -28,3 +28,5 @@
   when used for a method, it will execute the method when you click it and it will be shown on the customed path of the menu bar on the top of the screen
 - \[System.Obsolete("some text")\]
     **it's a predefined attribute by C#** [see here](https://www.cnblogs.com/hans_gis/archive/2011/11/19/2255592.html)
+## 杂七杂八  
+- FixedUpdate functions and suspended Coroutines with WaitForSeconds are not called when timeScale is set to zero.
