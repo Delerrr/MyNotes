@@ -28,5 +28,9 @@
   when used for a method, it will execute the method when you click it and it will be shown on the customed path of the menu bar on the top of the screen
 - \[System.Obsolete("some text")\]
     **it's a predefined attribute by C#** [see here](https://www.cnblogs.com/hans_gis/archive/2011/11/19/2255592.html)
+## 如何在不继承Monobehaviuor的类中使用协同？  
+	首先，在这个类中正常编写协同程序，然后使用一个继承了Monobehaviuor的类来调用这个协同。  
+	如： SceneController.instance.StartCoroutine(YourCoroutine(args));  
+	[原文链接](https://answers.unity.com/questions/161084/coroutine-without-monobehaviour.html)
 ## 杂七杂八  
 - FixedUpdate functions and suspended Coroutines with WaitForSeconds are not called when timeScale is set to zero.
