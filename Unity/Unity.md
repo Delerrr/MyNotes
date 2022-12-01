@@ -32,5 +32,8 @@
 	首先，在这个类中正常编写协同程序，然后使用一个继承了Monobehaviuor的类来调用这个协同。  
 	如： SceneController.instance.StartCoroutine(YourCoroutine(args));  
 	[原文链接](https://answers.unity.com/questions/161084/coroutine-without-monobehaviour.html)
+
+## 关于角色移动(rb.addForce()、transform.Translate()等)  
+  未完全搞懂，待完善（重要）。[StackExchange链接](https://gamedev.stackexchange.com/questions/169678/is-rigidbody-needed-and-what-move-function-to-use-in-2d-games), [demo链接](https://philipptheprogrammer.itch.io/unity-tutorial-how-to-move-your-player), demo源码：见resources文件夹
 ## 杂七杂八  
 - FixedUpdate functions and suspended Coroutines with WaitForSeconds are not called when timeScale is set to zero.
