@@ -46,13 +46,15 @@ x** on the line
     - **ct)** will change all parameters between the **)** and the cursor   
     btw, **ci(** is more usefull when all parameters are needed to be changed
 * 随手记
-	- 在光标前插入；一个小技巧：按8，再按i，进入插入模式，输入=， 按esc进入命令模式，就会出现8个=。 这在插入分割线时非常有用，如30i+<esc>就插入了36个+组成的分割线。
+	- 在光标前插入；一个小技巧：按8，再按i，进入插入模式，输入=， 按esc进入命令模式，就会出现8个=。 这在插入分割线时非常有用，如30i+\<esc>就插入了36个+组成的分割线。
 	- marks   
 		- marks 显示所有标记。   
-		   - :delmarks a b – 删除标记a和b。  
-		  - :delmarks a-c – 删除标记a、b和c。  
-		  - :delmarks a c-f – 删除标记a、c、d、e、f。  
-		  - :delmarks! – 删除当前缓冲区的所有标记。  
+		- :delmarks a b – 删除标记a和b。  
+		- :delmarks a-c – 删除标记a、b和c。  
+		- :delmarks a c-f – 删除标记a、c、d、e、f。  
+		- :delmarks! – 删除当前缓冲区的所有标记。  
 	- n%: 到文件n%的位置。  
 	- n|: 把光标移到递n列上。  
 	- nG: 到文件第n行。
+	- 在inert / command 模式下的粘贴快捷键: \<C-R> [reg_name]  
+		如：\<C-R>" 会粘贴系统剪切板的内容
