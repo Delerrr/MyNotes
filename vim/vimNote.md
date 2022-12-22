@@ -45,10 +45,10 @@ x** on the line
     - **cT=** will change every thing before the equation sign on the line 
     - **ct)** will change all parameters between the **)** and the cursor   
     btw, **ci(** is more usefull when all parameters are needed to be changed
-* 关于寄存器
-	- 寄存器介绍  
+* 关于寄存器  
+	寄存器介绍 ([链接](https://harttle.land/2016/07/25/vim-registers.html#header-8)) 
     
-    - | 寄存器名称 | 简介 |
+  | 寄存器名称 | 简介 |
 	| :---: | :---: |
 	| "" | 无名寄存器，永远存储上一次的任何和寄存器有关的操作，如"c", "x", "s", "y" 等 |
 	| "0 | 存储最近一次yank操作的内容 |
@@ -63,7 +63,7 @@ x** on the line
 	| "= | 表达式寄存器，用于计算vim脚本的返回值。在normal模式下键入 "= 后光标会移入命令行，在此键入表达式后按回车，计算结果会存入该寄存器和无名寄存器。这在我们调试 Vim 脚本时非常有用，比如调用一个函数看它是否有正确的返回值。Tips: 可视为vim自带的计算器 | 
 	| "*, "+, "~ | 选择和拖放寄存器。这三个寄存器的行为是和 GUI 相关的。 "* 和 "+ 在 Mac 和 Windows 中，都是指系统剪切板（clipboard）。 在 X11 系统中（绝大多数带有桌面环境的 Linux 发行版），二者是有区别的： "\* 指 X11 中的 PRIMARY 选区，即鼠标选中区域。在桌面系统中可按鼠标中键粘贴。 "+ 指 X11 中的 CLIPBOARD 选区，即系统剪切板。在桌面系统中可按 Ctrl+V 粘贴。 有文本拖拽到 Vim 时，被拖拽的文本被存储在 "~ 中。Vim 默认的行为是将 "~ 中内容插入到光标所在位置。|
 	| "/ |  搜索寄存器。用于存储上一次搜索操作的内容 |
-	* 随手记
+## 随手记
 	- 在光标前插入；一个小技巧：按8，再按i，进入插入模式，输入=， 按esc进入命令模式，就会出现8个=。 这在插入分割线时非常有用，如30i+\<esc>就插入了36个+组成的分割线。
 	- marks   
 		- marks 显示所有标记。   

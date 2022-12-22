@@ -19,7 +19,7 @@
 	-	创建新的会话并命名：  
 		tmux new -s \<name\>
 3.	更多
-	-	C-x z:make a pane go full screen. Hit C-b z again to shrink it back to its previous size
+	-	C-x z:make a pane go full screen. Hit C-x z again to shrink it back to its previous size
 	-	C-x C-\<arrow key\>: Resize pane in direction of \<arrow key\>
 	-	C-b ,: Rename the current window
 4. resources
