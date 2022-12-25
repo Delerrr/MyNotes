@@ -19,3 +19,54 @@
   即：`func1.call(obj, arg1, arg2, arg3)`等同于`func1(arg1, arg2, arg3)`且`this`指向`obj1`  
     
   于是，`func1.call(arg1)`就相当于`func1()`且`this`为`arg1`,于是`arg`形参为空, 没有`name`属性，故报错
+## 关于原型函数与实例函数的一个问题
+先看以下代码
+```javascript
+class Obj {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+
+    func() {
+        console.log('I\'m an instance method.')
+    }
+}
+
+Obj.prototype.func = function() {
+    console.log('I\'m a prototype method')
+}
+
+var obj = new Obj('obj', 23)
+obj.func() //输出：I'm a ptototype method.
+```
+输出结果说明实际调用的是原型方法，而理论上应该先调用实例方法，实例方法不存在再找原型方法，不是吗？  
+实际上，上述声明的"实例方法"实际上就是原型方法。不信可以试一下：
+```javascript
+class Obj {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+
+    func() {
+        console.log('I\'m an instance method.')
+    }
+}
+
+var obj = new Obj('obj', 23)
+console.log(obj.func === obj.__proto__.func)  //输出：true
+```
+咦，原来这样真的是原型方法。那么怎样声明实例方法呢？看以下代码:
+```javascript
+class Obj {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+        this.func = function() {
+            console.log('I\'m an instance method.')
+        }
+    }
+}
+```
+破案！
